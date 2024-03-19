@@ -351,13 +351,13 @@ class PagesController extends Controller
 
     //check transaction Id has given or not
 
-    if($request->payment_method != 'cash_in'){
-        if ($request->transaction_id==NULL || empty($request->transaction_id)) {
-
-            session()-> flash('error','Please give a  Transaction Id for your payment');
-            return back();
-        }
-    }
+//    if($request->payment_method != 'cash_in'){
+//        if ($request->transaction_id==NULL || empty($request->transaction_id)) {
+//
+//            session()-> flash('error','Please give a  Transaction Id for your payment');
+//            return back();
+//        }
+//    }
 
      $order->name = $request->name;
      $order->email = $request->email;
